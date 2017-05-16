@@ -1,0 +1,346 @@
+body {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-family: Raleway;
+  background: url(../tiny-grid.png) repeat;*/
+  background-size: cover;
+  background-position: 50%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+body .menu {
+  position: absolute;
+  width: 100%;
+  background: inherit;
+}
+body .menu .mainmenu {
+  background: url(https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: 50%;
+}
+body .menu .mainmenu:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+body .menu .mainmenu:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+body .menu .mainmenu .menuitem {
+  float: left;
+  width: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5rem;
+}
+body #findpass {
+  top: 50%;
+  left: 5%;
+  padding: 10px 20px;
+  width: auto;
+  background: black;
+  color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+body #findpass:focus {
+  outline: none;
+}
+body .article {
+  width: 960px;
+  font-size: 1.4rem;
+  margin: 20px auto;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: opacity 400ms linear;
+  -o-transition: opacity 400ms linear;
+  -webkit-transition: opacity 400ms linear;
+  transition: opacity 400ms linear;
+  -moz-transition-delay: 800ms;
+  -o-transition-delay: 800ms;
+  -webkit-transition-delay: 800ms;
+  transition-delay: 800ms;
+  top: 0;
+  position: relative;
+}
+body .article.active {
+  opacity: 1;
+  visibility: visible;
+}
+body .article h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p {
+  text-align:justify;
+}
+.form {
+  margin: 0 auto;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  width: 350px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: black;
+  border: none;
+  background: inherit;
+}
+.form .forceColor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*background-color: rgba(0, 0, 0, 0.4);*/
+}
+.form:before {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  background: inherit;
+  left: -5%;
+  right: 0;
+  bottom: 0;
+  top: -5%;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.form.goAway {
+  opacity: 0;
+  -moz-transform: scale(0.6) translate3d(-50%, 0, 0);
+  -ms-transform: scale(0.6) translate3d(-50%, 0, 0);
+  -webkit-transform: scale(0.6) translate3d(-50%, 0, 0);
+  transform: scale(0.6) translate3d(-50%, 0, 0);
+  -moz-transition: -moz-transform 200ms ease-in-out, opacity 100ms linear;
+  -o-transition: -o-transform 200ms ease-in-out, opacity 100ms linear;
+  -webkit-transition: -webkit-transform 200ms ease-in-out, opacity 100ms linear;
+  transition: transform 200ms ease-in-out, opacity 100ms linear;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  -webkit-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+.form .topbar .spanColor {
+  position: absolute;
+  width: 0px;
+  right: 20px;
+  height: 43px;
+  opacity: 0.2;
+  background-color: black;
+  -moz-transition: width 150ms ease-in-out, background-color 150ms ease-in-out 250ms, border 150ms ease-in-out 250ms;
+  -o-transition: width 150ms ease-in-out, background-color 150ms ease-in-out 250ms, border 150ms ease-in-out 250ms;
+  -webkit-transition: width 150ms ease-in-out, background-color 150ms ease-in-out, border 150ms ease-in-out;
+  -webkit-transition-delay: 0s, 250ms, 250ms;
+  transition: width 150ms ease-in-out, background-color 150ms ease-in-out 250ms, border 150ms ease-in-out 250ms;
+}
+.form .topbar .input {
+  display: block;
+  width: 100%;
+  position: relative;
+  font-size: 1rem;
+  background: transparent;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  color: #434f54;
+  padding: 10px 20px;
+}
+.form .topbar .input::-webkit-input-placeholder {
+  color: black;
+  font-size: 1.2rem;
+  font-family: Raleway;
+  line-height: 1.3rem;
+  font-weight: 200;
+}
+.form .topbar .input:focus {
+  outline: none;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.form .topbar .input.disabled:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.form .topbar .input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.form .submit {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: Raleway;
+  font-weight: 200;
+  display: block;
+  color: white;
+  position: relative;
+  background: rgba(0, 151, 157, 1);
+  cursor: pointer;
+  border-top: 2px solid white;
+  border-bottom: 5px solid rgb(0,92,95);
+  border-left: none;
+  border-right: none;
+}
+.form .submit:focus {
+  outline: none;
+}
+.form .submit:hover {
+  color: white;
+  border-top: 5px solid white;
+  border-bottom: 2px solid rgb(0,92,95);
+}
+.form .submit.recover {
+  background: rgb(218,91,74);
+  color: white !important;
+  border-top: 2px solid white;
+  border-bottom: 5px solid #FF2B4B;
+  border-left: none;
+  border-right: none;
+  transition: all 400ms linear;
+}
+
+.topbar.error .spanColor {
+  width: calc(100% - 39px);
+  border: 1px solid rgb(218,91,74);
+  background-color: rgb(218,91,74);
+}
+.topbar.error + .submit {
+  color: white;
+}
+.topbar.error .input {
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid rgb(218,91,74);
+}
+.topbar.error .input::-webkit-input-placeholder {
+  color: black;
+}
+
+.topbar.success .spanColor {
+  width: calc(100% - 39px);
+  border: 1px solid rgb(29,160,134);
+  background-color: rgb(29,160,134);
+}
+.topbar.success + .submit {
+  color: white;
+  border: 1px solid black;
+}
+.topbar.success .input {
+  color: black;
+  border: 1px solid rgb(29,160,134);
+}
+.topbar.success .input::-webkit-input-placeholder {
+  color: black;
+}
+.top-section {
+  background-color: rgb(0,151,157);
+  height:140px;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  color:white;
+  padding: 20px;
+}
+.top-container{
+  width:900px;
+  margin: 0 auto;
+}
+.body-section {
+  width:900px;
+  margin: 150px auto;
+  color:black;
+}
+.downloads {
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: Raleway;
+  font-weight: 200;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background: rgba(0, 151, 157, 1);
+  cursor: pointer;
+  border-top: 2px solid white;
+  border-bottom: 5px solid rgb(0,92,95);
+  border-left: none;
+  border-right: none;
+}
+.downloads:hover {
+  color: white;
+  border-top: 5px solid white;
+  border-bottom: 2px solid rgb(0,92,95);
+}
+.download-container {
+  width:25%;
+  margin:0;
+  padding:10px;
+  display:inline-block;
+  float:left;
+}
+.logo{
+  padding:0;
+  margin:0 auto;
+  width:100px;
+  height:100px;
+  position: fixed;
+  display:block;
+}
+.logout {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: Raleway;
+  font-weight: 200;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background: rgba(244, 122, 32, 1);
+  cursor: pointer;
+  border-top: 2px solid rgba(0, 151, 157, 1);
+  border-bottom: 5px solid white;
+  border-left: none;
+  border-right: none;
+}
+.logout:hover {
+  color: white;
+  border-top: 5px solid rgba(0, 151, 157, 1);
+  border-bottom: 2px solid white;
+}
